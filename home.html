@@ -4,6 +4,7 @@
 <head>
 <title>HOP SHOP</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
 <!-- Custom Theme files -->
@@ -16,8 +17,8 @@
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <!--fonts-->
-<link href='//fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Montez' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montez' rel='stylesheet' type='text/css'>
 <!--//fonts-->
 <!-- start menu -->
 <!--//slider-script-->
@@ -39,10 +40,15 @@
 		 <script src="js/bootstrap.js"></script>
 	<!-- js -->
 <script src="js/simpleCart.min.js"> </script>
-<!-- start menu -->
+<!-- <star></star>t menu -->
 <link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/login.css">
 <script type="text/javascript" src="js/memenu.js"></script>
-<script>$(document).ready(function(){$(".memenu").memenu();});</script>	
+<script>$(document).ready(function(){
+	$(".memenu").memenu();
+
+});
+</script>	
 <!-- /start menu -->
 </head>
 <body> 
@@ -55,14 +61,14 @@
 							<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope"> </i>HOPSHOP@gmail.com</a></li>
 							<li><span><i class="glyphicon glyphicon-earphone" class="tele-in"> </i>0 462 261 61 61</span></li>			
 						</ul>
-						<ul class=" support-right">
-							<li><a><i class="glyphicon glyphicon-user" class="men"> </i>Login</a></li>
-							<li><a><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>			
+						<ul class="support-right">
+							<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#login"><i class="glyphicon glyphicon-user" class="men"></i> LOGIN | REGISTER</button>
 						</ul>
 						<div class="clearfix"> </div>
 					</div>
 				</div>
 			</div>	
+
 <div class="header">
 	<div class="header-top">
 
@@ -706,6 +712,76 @@
 	</div>
 	<!--end-shoes-->
 	<!---->
+
+	<!-- Modal -->
+<div class="modal fade" id="login" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <!--<div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>-->
+      <div class="modal-body">
+		<div class="login-wrap">
+			<div class="login-html">
+				<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+				<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+				<div class="login-form">
+					<div class="sign-in-htm">
+						<div class="group">
+							<label for="user" class="label">Username</label>
+							<input id="user" type="text" class="input">
+						</div>
+						<div class="group">
+							<label for="pass" class="label">Password</label>
+							<input id="pass" type="password" class="input" data-type="password">
+						</div>
+						<div class="group">
+							<input id="check" type="checkbox" class="check" checked>
+							<label for="check"><span class="icon"></span> Keep me Signed in</label>
+						</div>
+						<div class="group">
+							<input type="submit" class="button" value="Sign In">
+						</div>
+						<div class="hr"></div>
+						<div class="foot-lnk">
+							<a href="#forgot">Forgot Password?</a>
+						</div>
+					</div>
+					<div class="sign-up-htm">
+						<div class="group">
+							<label for="user" class="label">Username</label>
+							<input id="user" type="text" class="input">
+						</div>
+						<div class="group">
+							<label for="pass" class="label">Password</label>
+							<input id="pass" type="password" class="input" data-type="password">
+						</div>
+						<div class="group">
+							<label for="pass" class="label">Repeat Password</label>
+							<input id="pass" type="password" class="input" data-type="password">
+						</div>
+						<div class="group">
+							<label for="pass" class="label">Email Address</label>
+							<input id="pass" type="text" class="input">
+						</div>
+						<div class="group">
+							<input type="submit" class="button" value="Sign Up">
+						</div>
+						<div class="hr"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+      </div>
+      <!--<div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>-->
+  </div>
+</div>
+
 	<div class="footer">
 		<div class="container">
 			<!-- <div class="col-md-4 footer-top"> 

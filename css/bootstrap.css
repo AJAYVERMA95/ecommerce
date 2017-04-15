@@ -2317,6 +2317,31 @@ fieldset[disabled] .btn-link:focus {
   color: #999;
   text-decoration: none;
 }
+.btn-outline-success {
+  color: #5cb85c;
+  background-image: none;
+  background-color: transparent;
+  border-color: #5cb85c;
+}
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+}
+.btn-outline-success:focus, .btn-outline-success.focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(92, 184, 92, 0.5);
+          box-shadow: 0 0 0 2px rgba(92, 184, 92, 0.5);
+}
+.btn-outline-success.disabled, .btn-outline-success:disabled {
+  color: #5cb85c;
+  background-color: transparent;
+}
+.btn-outline-success:active, .btn-outline-success.active,
+.show > .btn-outline-success.dropdown-toggle {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+}
 .btn-lg,
 .btn-group-lg > .btn {
   padding: 10px 16px;
@@ -5081,7 +5106,7 @@ button.close {
   background: transparent;
   border: 0;
 }
-.modal-open {
+.modal-open{
   overflow: hidden;
 }
 .modal {
@@ -5105,11 +5130,13 @@ button.close {
   -webkit-transform: translate(0, -25%);
       -ms-transform: translate(0, -25%);
           transform: translate(0, -25%);
+          
 }
 .modal.in .modal-dialog {
   -webkit-transform: translate(0, 0);
       -ms-transform: translate(0, 0);
           transform: translate(0, 0);
+          
 }
 .modal-dialog {
   position: relative;
