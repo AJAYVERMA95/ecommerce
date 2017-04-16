@@ -279,7 +279,7 @@ width: 50%;
 }
 .resp-tab-item{
   color: #000;
-    font-size: 1.1em;
+  font-size: 1.1em;
   cursor: pointer;
   padding: 6px;
   display: inline-block;
@@ -295,6 +295,7 @@ width: 50%;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   border: 2px solid #000;
+	border-radius: 4px;
   margin: 0 0.5em 0;
 }
 .resp-tab-active{
@@ -492,6 +493,7 @@ span.dollor{
 	font-size:15px;
 	font-weight:400;
 	padding:6px 12px;
+	border-radius: 4px;
 }
 .product-left{
 	position:relative;
