@@ -2108,7 +2108,7 @@ li.ring-in img{
 /*--responsive--*/
 @media(max-width:1366px){
 	.now {
-	  margin: 1em 0 0 17em;
+	  margin: 1em 0 0 7em;
 	}
 }
 @media(max-width:1280px){
